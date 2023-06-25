@@ -12,7 +12,7 @@ Edit `${HOME}/.config/rc`, and set the following environment variables:
 * `TARGET_PROTOCOL`: http of https
 
 For example:
-```
+```bash
 export PASSWORD=NOT_A_REAL_PASSWORD
 export TARGET_HOST=example.com
 export TARGET_PORT=8443
@@ -20,7 +20,9 @@ export TARGET_PROTOCOL=https
 ```
 ## Run
 
+```bash
 ./pfsense_backup.sh
+```
 
 ## Reference
 1. https://docs.netgate.com/pfsense/en/latest/backup/remote-backup.html#using-curl

@@ -2,8 +2,10 @@
 
 set -e
 
+# Read settings form file
 . ~/.config/pfsense-backup/rc
 
+UASENAME=${USERNAME:-admin}
 # URL
 TARGET_HOST=${TARGET_HOST:-192.168.1.1}
 TARGET_PORT=${TARGET_PORT:-80}

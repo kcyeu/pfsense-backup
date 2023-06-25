@@ -1,5 +1,8 @@
 # pfSense Backup
 
+## Prerequisites
+* curl
+
 ## Setup
 
 Edit `${HOME}/.config/rc`, and set the following environment variables:
@@ -15,3 +18,9 @@ export TARGET_HOST=example.com
 export TARGET_PORT=8443
 export TARGET_PROTOCOL=https
 ```
+## Run
+
+./pfsense_backup.sh
+
+## Reference
+1. https://docs.netgate.com/pfsense/en/latest/backup/remote-backup.html#using-curl

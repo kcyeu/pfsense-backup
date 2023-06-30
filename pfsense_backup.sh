@@ -18,10 +18,10 @@ CURL_FLAGS=("--location" "--insecure" "--silent")
 
 # File path
 BASE_DIR=$(dirname $(readlink -f ${0}))
-BACKUP_DIR=${BASE_DIR}/backups
-BACKUP_FILE=${BACKUP_DIR}/config_${TARGET_HOST}_$(date +%Y-%m-%d_%H:%M:%S).xml
 COOKIE_FILE=${BASE_DIR}/cookies.txt
 CSRF_FILE=${BASE_DIR}/csrf.txt
+BACKUP_DIR=${HOME}/backups/pfSense
+BACKUP_FILE=${BACKUP_DIR}/config_${TARGET_HOST}_$(date +%Y-%m-%d_%H:%M:%S).xml
 
 # Backup options
 BACKUP_RETENTION_DAY=30
